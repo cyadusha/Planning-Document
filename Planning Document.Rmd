@@ -1,0 +1,10 @@
+---
+title: "Planning Document"
+author: "Yadu"
+date: "April 8, 2017"
+output: html_document
+---
+
+The dataset that will be used is the books-crossing dataset which is already built into the `recommenderlabBX` package. This dataset will be converted into a data frame and then loaded into spark. Then, the alternating least squares factorization method will be used in 2 cases - first on the entire dataset and next on the entire data set split into a training set (80%) and a testing set (20%). Then, for both cases, the predictions and the ratings will be averaged by item. Then, the items containing the top average predictions will be rendered. Additionally the root-mean-squared error, mean-absolute error, and the area under the curve will be computed for each case. 
+
+The idea here is not only to get the top recommendations from each method but also to determine which method would deliver accurate predictions. 
